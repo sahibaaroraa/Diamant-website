@@ -68,11 +68,11 @@ function Navbar() {
             {/* </NavLink> */}
             </li>
 
-            <li className='nav-item'> 
+            {/* <li className='nav-item'>  */}
             {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
               14 Carot
             {/* </NavLink> */}
-            </li>
+            {/* </li> */}
 
           </ul>
 
