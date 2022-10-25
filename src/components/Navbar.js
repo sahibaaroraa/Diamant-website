@@ -40,9 +40,9 @@ function Navbar() {
 
       <nav className="navbar">
         <div className="navbar-container" >
-          <NavLink to='/' className="navbar-logo" onClick={closeMobileMenu} width="55" >
+          {/* <NavLink to='/' className="navbar-logo" onClick={closeMobileMenu} width="55" > */}
             DIAMANT <FaGem />
-  </NavLink>
+  {/* </NavLink> */}
           <span className="navbar-owner"> A krishna jewellers' product</span>
           <div className="menu-icon" onClick={handleClick}>
             <i class={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -51,21 +51,28 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
             <li className='nav-item'>
-              <NavLink className='nav-links' onClick={closeMobileMenu}>
+              {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
                 All jewellery
-              </NavLink></li>
+              {/* </NavLink> */}
+              </li>
 
-            <li className='nav-item'><NavLink className='nav-links' onClick={closeMobileMenu}>
+            <li className='nav-item'>
+              {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
               22 Carot
-            </NavLink></li>
+            {/* </NavLink> */}
+            </li>
 
-            <li className='nav-item'> <NavLink className='nav-links' onClick={closeMobileMenu}>
+            <li className='nav-item'> 
+            {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
               18 Carot
-            </NavLink></li>
+            {/* </NavLink> */}
+            </li>
 
-            <li className='nav-item'> <NavLink className='nav-links' onClick={closeMobileMenu}>
+            <li className='nav-item'> 
+            {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
               14 Carot
-            </NavLink></li>
+            {/* </NavLink> */}
+            </li>
 
           </ul>
 
