@@ -1,29 +1,28 @@
 import React from 'react'
 import './App.css';
 import Navbar from './components/Navbar';
-import {BrowserRouter,Router,Routes} from 'react-router-dom';
+import { BrowserRouter, Routes } from 'react-router-dom';
 
 
 
 
 function App() {
 
-   
+
   return (
     <BrowserRouter>
-    <Router>
-    <Routes>
-    <Navbar />
-    </Routes>
-    </Router>
+      <Navbar />
+      <Routes>
+
+      </Routes>ß
+
     </BrowserRouter>
-    
-  
-      
-   
+
+
+
+
   )
-  
-  }
+
+}
 export default App;
 
-  
