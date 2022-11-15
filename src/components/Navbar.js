@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from "react-router-dom";
+ import { NavLink } from "react-router-dom";
 import { Button } from './button';
 import './Navbar.css';
-import { FaGem } from 'react-icons/fa';
+import { FaGem, FaShoppingBag } from 'react-icons/fa';
+import deer from '../images/deer.png';
 
 
 
 
 
 
+ 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -40,9 +42,9 @@ function Navbar() {
 
       <nav className="navbar">
         <div className="navbar-container" >
-          {/* <NavLink to='/' className="navbar-logo" onClick={closeMobileMenu} width="55" > */}
+          <NavLink to='/' className="navbar-logo" onClick={closeMobileMenu} width="55" as={NavLink} > 
             DIAMANT <FaGem />
-  {/* </NavLink> */}
+   </NavLink> 
           <span className="navbar-owner"> A krishna jewellers' product</span>
           <div className="menu-icon" onClick={handleClick}>
             <i class={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -51,40 +53,52 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
             <li className='nav-item'>
-              {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
-                All jewellery
-              {/* </NavLink> */}
+               <NavLink to='/' className='nav-links' onClick={closeMobileMenu}> 
+                Home
+              </NavLink> 
               </li>
 
             <li className='nav-item'>
-              {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
-              22 Carot
-            {/* </NavLink> */}
+              <NavLink to='/' className='nav-links' onClick={closeMobileMenu}> 
+              Store
+            </NavLink> 
             </li>
 
             <li className='nav-item'> 
-            {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
-              18 Carot
-            {/* </NavLink> */}
+             <NavLink to='/' className='nav-links' onClick={closeMobileMenu}> 
+              About
+            </NavLink>
             </li>
 
-            {/* <li className='nav-item'>  */}
-            {/* <NavLink className='nav-links' onClick={closeMobileMenu}> */}
-              14 Carot
-            {/* </NavLink> */}
-            {/* </li> */}
+           {/* <li className='nav-item'>  
+             <NavLink to='/' className='nav-links' onClick={closeMobileMenu}> 
+              About
+             </NavLink> 
+  </li> */}
 
           </ul>
 
-          {button && <Button ButtonStyle='btn--outline'>SIGN UP </Button>}
+          {button && <Button ButtonStyle='btn--outline'> <FaShoppingBag/> </Button>}
+          
 
         </div>
 
       </nav>
 
+      <div> <img className='firstimage'src= {deer} alt="diamondpendant"/> </div>
+
+
+     
+
+       
+
+      
+
     </>
   );
 }
+
+
 
 export default Navbar;
 
